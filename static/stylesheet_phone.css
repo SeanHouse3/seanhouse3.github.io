@@ -1,6 +1,6 @@
 /* this style sheet is for desktop pages*/
 
-
+@media screen and (max-width: 800px) {
 
 body {
         background-color: whitesmoke;
@@ -228,14 +228,62 @@ input:focus, textarea:focus {
 
     .slide1 {
         background-image: url("../images/Photos/Photo (77).jpg");
+        size: 25%;
     }
 
     .slide2 {
         background-image: url("../images/Photos/Photo (69).jpg");
+        size: 25%;
     }
 
     .slide3 {
         background-image: url("../images/Photos/Photo (87).JPG");
+        size: 100%;
+    }
+
+    .slide4 {
+        background-image: url("../images/Photos/Photo (106).JPG");
+        size: 100%;
+    }
+
+    .slide5 {
+        background-image: url("../images/Photos/Photo (109).JPG");
+        size: 100%;
+    }
+
+    .slide6 {
+        background-image: url("../images/Photos/Photo (96).JPG");
+        size: 100%;
+    }
+
+    .slide7 {
+        background-image: url("../images/Photos/Photo (116).JPG");
+        size: 100%;
+    }
+
+    .slide8 {
+        background-image: url("../images/Photos/Photo (127).JPG");
+        size: 100%;
+    }
+
+    .slide9 {
+        background-image: url("../images/Photos/Photo (141).JPG");
+        size: 100%;
+    }
+
+    .slide10 {
+        background-image: url("../images/Photos/Photo (136).JPG");
+        size: 100%;
+    }
+
+    .slide11{
+        background-image: url("../images/Photos/Photo (99).JPG");
+        size: 100%;
+    }
+
+    .slide12 {
+        background-image: url("../images/Photos/Photo (90).JPG");
+        size: 100%;
     }
     
     .arrow {
@@ -266,6 +314,4 @@ input:focus, textarea:focus {
 /* media queries*/
 
 
-@media only screen{
-        
 }
