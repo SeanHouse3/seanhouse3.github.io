@@ -1,0 +1,271 @@
+/* this style sheet is for desktop pages*/
+
+
+
+body {
+        background-color: whitesmoke;
+        background-size: 100%;
+        background-attachment: fixed;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2vw;
+}
+body.information {
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 20px;
+}
+
+
+.page1_flexgrid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: flex-start;
+        padding: 20px;
+}
+    
+
+.page1_flexgrid > * {
+        flex: 1 1 300px;
+        border: 20px solid red;
+        box-sizing: border-box;
+        padding: 10px;
+}
+/* Page 1 Styling */
+.page1 {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-top: 60px;
+}
+
+#page1_image1 {
+        width: 250px;
+        border-radius: 5px;
+        padding-right: 30px;
+        float: left;
+}
+
+#page1_paragraph1 {
+        float: right;
+        padding-left: 20px;
+}
+
+@media screen and (max-width: 800px) {
+        
+
+        #page1_media {
+                color: green;
+                background-color: black;
+                border: solid 10px green;
+        }
+
+}
+
+@media screen and (min-width: 800px) {
+        #page1_media {
+                color: purple;
+                background-color: pink;
+                border: solid 10px purple;
+        }
+
+}
+
+
+
+/* Page 2 Styleing */
+.page2 {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-top: 60px;
+}
+
+/*
+#page2_image1:hover {
+        transform: scale(1.25);
+        transition-timing-function: ease-in-out;
+        transition-delay: 2s;
+}
+*/
+
+
+#page2_math_image {
+        width: 300px;
+}
+
+
+
+
+
+/*Page 3 styling */
+
+/*
+.page4 {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-top: 60px;
+}
+*/
+
+#page3_header1 {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-top: 60px;
+
+}
+
+
+#page3_container {
+        background-color: rgba(255,165,0,0.25);
+        overflow: auto;
+        white-space: nowrap;
+        padding: 10px;
+}
+
+#page3_container img {
+        padding: 10px;
+}
+
+#page3_image1 {
+        width: 30%;
+        object-fit: contain;
+}
+
+#page3_image2 {    
+        width: 30%;
+        object-fit: contain;
+}
+
+#page3_image3 {
+        
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+}
+
+
+
+
+
+
+/* Page 4 Styling */
+
+.page4 {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-top: 20px;
+}
+
+
+
+
+.container {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        text-align: center;
+}
+
+form {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        margin-right: 30px;
+}
+
+      
+label {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-weight: bold;
+}
+      
+input, textarea {
+padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid black;
+        border-radius: 4px;
+        font-size: 16px;
+}
+
+input:focus, textarea:focus {
+        background-color: gold;
+}
+      
+#submit_button {
+        padding: 10px;
+        background-color: orange;
+        color: whitesmoke;
+        border: none;
+        width: 250px;
+        border-radius: 4px;
+        font-size: 18px;
+}
+      
+#submit_button:hover {
+        background-color: goldenrod;
+}
+
+
+
+
+
+/*trying to work out image slideshow */
+
+
+.slide {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        height: 100vh;
+        overflow-x: hidden;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .slide1 {
+        background-image: url("../images/Photos/Photo (77).jpg");
+    }
+
+    .slide2 {
+        background-image: url("../images/Photos/Photo (69).jpg");
+    }
+
+    .slide3 {
+        background-image: url("../images/Photos/Photo (87).JPG");
+    }
+    
+    .arrow {
+        cursor: pointer;
+        position: absolute;
+        top: 80%;
+        margin-top: -35px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+    }
+    
+    #arrow-left {
+        border-width: 20px 30px 20px 0;
+        border-color: transparent #fff transparent transparent;
+        left: 0;
+        margin-left: 20px;
+    }
+    
+    #arrow-right {
+        border-width: 20px 0 20px 30px;
+        border-color: transparent transparent transparent #fff;
+        right: 0;
+        margin-right: 20px;
+    }
+
+
+/* media queries*/
+
+
+@media only screen{
+        
+}
