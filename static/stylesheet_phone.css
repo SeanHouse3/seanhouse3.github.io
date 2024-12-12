@@ -1,6 +1,5 @@
 /* this style sheet is for desktop pages*/
 
-@media screen and (max-width: 800px) {
 
 body {
         background-color: whitesmoke;
@@ -16,81 +15,52 @@ body.information {
 }
 
 
-.page1_flexgrid {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        align-items: flex-start;
-        padding: 20px;
-}
-    
-
-.page1_flexgrid > * {
-        flex: 1 1 300px;
-        border: 20px solid red;
-        box-sizing: border-box;
-        padding: 10px;
-}
 /* Page 1 Styling */
-.page1 {
-        margin-left: 50px;
-        margin-right: 50px;
-        padding-top: 60px;
-}
-
-#page1_image1 {
-        width: 250px;
-        border-radius: 5px;
-        padding-right: 30px;
-        float: left;
-}
-
-#page1_paragraph1 {
-        float: right;
-        padding-left: 20px;
-}
-
 @media screen and (max-width: 800px) {
         
-
-        #page1_media {
-                color: green;
-                background-color: black;
-                border: solid 10px green;
+        .page1 {
+                margin-left: 25px;
+                margin-right: 25px;
         }
 
-}
-
-@media screen and (min-width: 800px) {
-        #page1_media {
-                color: purple;
-                background-color: pink;
-                border: solid 10px purple;
+        #page1_image1 {
+                width: 150px;
+                border-radius: 5px;
+                padding-right: 30px;
+                float: top;
         }
 
-}
+        #page1_information {
+                float: right;
+                padding-left: 20px;
+                background-color: rgba(255,165,0,0.25);
+        }
+
+
+
+
+
 
 
 
 /* Page 2 Styleing */
-.page2 {
-        margin-left: 50px;
-        margin-right: 50px;
-        padding-top: 60px;
-}
 
-/*
-#page2_image1:hover {
-        transform: scale(1.25);
-        transition-timing-function: ease-in-out;
-        transition-delay: 2s;
-}
-*/
+        .page2 {
+                margin-left: 25px;
+                margin-right: 25px;
+        }
 
+        #page2_information {
+                float: right;
+                padding-left: 20px;
+                background-color: rgba(255,165,0,0.25);
+        }
 
-#page2_math_image {
-        width: 300px;
-}
+        #page2_math_image {
+                width: 150px;
+                float: left;
+                margin: 10px
+        }
 
 
 
@@ -98,20 +68,6 @@ body.information {
 
 /*Page 3 styling */
 
-/*
-.page4 {
-        margin-left: 50px;
-        margin-right: 50px;
-        padding-top: 60px;
-}
-*/
-
-#page3_header1 {
-        margin-left: 50px;
-        margin-right: 50px;
-        padding-top: 60px;
-
-}
 
 
 #page3_container {
@@ -121,26 +77,21 @@ body.information {
         padding: 10px;
 }
 
-#page3_container img {
-        padding: 10px;
+
+#arrow-left {
+        border-width: 20px 30px 20px 0;
+        border-color: transparent white transparent transparent;
+        left: 15;
+        margin-left: 20px;
+    }
+    
+#arrow-right {
+        border-width: 20px 0 20px 30px;
+        border-color: transparent transparent transparent white ;
+        right: 0;
+        margin-right: 20px;
 }
 
-#page3_image1 {
-        width: 30%;
-        object-fit: contain;
-}
-
-#page3_image2 {    
-        width: 30%;
-        object-fit: contain;
-}
-
-#page3_image3 {
-        
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-}
 
 
 
@@ -219,7 +170,7 @@ input:focus, textarea:focus {
         padding: 0;
         font-family: Arial, Helvetica, sans-serif;
         width: 100%;
-        height: 100vh;
+        height: 50vh;
         overflow-x: hidden;
         background-size: cover;
         background-position: center;
@@ -228,90 +179,66 @@ input:focus, textarea:focus {
 
     .slide1 {
         background-image: url("../images/Photos/Photo (77).jpg");
-        size: 25%;
+        background-size: 100%;
     }
 
     .slide2 {
         background-image: url("../images/Photos/Photo (69).jpg");
-        size: 25%;
+        background-size: 100%;
     }
 
     .slide3 {
         background-image: url("../images/Photos/Photo (87).JPG");
-        size: 100%;
+        background-size: 100%;
     }
 
     .slide4 {
         background-image: url("../images/Photos/Photo (106).JPG");
-        size: 100%;
+        background-size: 100%;
     }
 
     .slide5 {
         background-image: url("../images/Photos/Photo (109).JPG");
-        size: 100%;
+        background-size: 100%;
     }
 
     .slide6 {
         background-image: url("../images/Photos/Photo (96).JPG");
-        size: 100%;
+        background-size: 100%;
     }
 
     .slide7 {
         background-image: url("../images/Photos/Photo (116).JPG");
-        size: 100%;
+        background-size: 100%;
     }
 
     .slide8 {
         background-image: url("../images/Photos/Photo (127).JPG");
-        size: 100%;
+        background-size: 100%;
     }
 
     .slide9 {
         background-image: url("../images/Photos/Photo (141).JPG");
-        size: 100%;
+        background-size: 100%;
     }
 
     .slide10 {
         background-image: url("../images/Photos/Photo (136).JPG");
-        size: 100%;
+        background-size: 100%;
     }
 
     .slide11{
         background-image: url("../images/Photos/Photo (99).JPG");
-        size: 100%;
+        background-size: 100%;
     }
 
     .slide12 {
         background-image: url("../images/Photos/Photo (90).JPG");
-        size: 100%;
+        background-size: 100%;
     }
     
-    .arrow {
-        cursor: pointer;
-        position: absolute;
-        top: 80%;
-        margin-top: -35px;
-        width: 0;
-        height: 0;
-        border-style: solid;
-    }
     
-    #arrow-left {
-        border-width: 20px 30px 20px 0;
-        border-color: transparent #fff transparent transparent;
-        left: 0;
-        margin-left: 20px;
-    }
     
-    #arrow-right {
-        border-width: 20px 0 20px 30px;
-        border-color: transparent transparent transparent #fff;
-        right: 0;
-        margin-right: 20px;
-    }
-
-
-/* media queries*/
-
+    
 
 }
