@@ -1,12 +1,17 @@
+/* nav bar is not changing sizes when on the phone. Text needs to be bigger and the whole dorpdown
+menu needs to be increased in size so people know what to click */
+
+
 .mynav {
     overflow: hidden;
     background-color: darkgrey;
     font-family: Arial;
   }
   
+
   .mynav a {
     float: left;
-    font-size: 16px;
+    font-size: 2vw;
     color: white;
     text-align: center;
     padding: 14px 16px;
