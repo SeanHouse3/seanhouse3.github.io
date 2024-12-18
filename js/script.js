@@ -1,3 +1,6 @@
+/* This JavaScript is not my code and I do not claim it as my own. I got it from https://www.geeksforgeeks.org/how-to-create-image-slider-using-html-css-and-javascript/ */
+
+
 let sliderImages = document.querySelectorAll(".slide"),
     arrowLeft = document.querySelector("#arrow-left"),
     arrowRight = document.querySelector("#arrow-right"),

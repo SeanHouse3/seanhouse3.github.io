@@ -3,63 +3,98 @@ menu needs to be increased in size so people know what to click */
 
 
 .mynav {
-    overflow: hidden;
-    background-color: darkgrey;
-    font-family: Arial;
-  }
-  
+  overflow: hidden;
+  background-color: darkgrey;
+  font-family: Arial;
+}
 
+/* Nav Desktop Styling */
+.mynav a {
+  float: left;
+  font-size: 2vw;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: solid black 1px;
+  border-radius: 10px;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.mynav a:hover, .dropdown:hover .dropbtn {
+  background-color: orange;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  padding: 14px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 14px;
+  text-decoration: none;
+  display: flex;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: orange;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Nav Phone Styling */
+@media screen and (max-width: 768px) {
   .mynav a {
-    float: left;
-    font-size: 2vw;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    font-size: 16px;
-    border: solid black 1px;
-    border-radius: 10px;
-    outline: none;
-    color: black;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0; 
-  }
-  
-  .mynav a:hover, .dropdown:hover .dropbtn {
-    background-color: orange;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    padding: 14px;
-  }
-  
-  .dropdown-content a {
     float: none;
-    color: black;
-    padding: 14px;
-    text-decoration: none;
-    display: flex;
+    display: block;
+    text-align: left;
+    font-size: 4vw;
+    padding: 12px 16px;
+  }
+
+  .dropdown {
+    float: none;
+    width: 100%;
+  }
+
+  .dropdown .dropbtn {
+    width: 100%;
     text-align: left;
   }
-  
-  .dropdown-content a:hover {
-    background-color: orange;
+
+  .dropdown-content {
+    position: relative;
+    width: 100%;
   }
-  
+
+
   .dropdown:hover .dropdown-content {
+    display: none;
+  }
+
+  .dropdown:focus-within .dropdown-content {
     display: block;
   }
+}
